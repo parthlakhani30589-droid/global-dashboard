@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Pulse Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">G</div>
+          <div>
+            <div class="brand-name">Global Pulse</div>
+            <div class="brand-subtitle">Live intelligence</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active"><span>◉</span> Overview</button>
+          <button class="nav-item"><span>◎</span> Flights</button>
+          <button class="nav-item"><span>◌</span> Maritime</button>
+          <button class="nav-item"><span>△</span> Weather</button>
+          <button class="nav-item"><span>▣</span> Cameras</button>
+          <button class="nav-item"><span>✦</span> Analytics</button>
+        </nav>
+
+        <div class="side-card">
+          <div class="mini-label">Network health</div>
+          <div class="health-ring">
+            <div class="ring-core">96.2%</div>
+          </div>
+          <div class="health-row">
+            <span>Satellites</span>
+            <strong>1,284</strong>
+          </div>
+          <div class="health-row">
+            <span>Ports</span>
+            <strong>692</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">System status</div>
+            <h1>World Operations Console</h1>
+          </div>
+
+          <div class="topbar-actions">
+            <div class="search-box">Search city, route, vessel</div>
+            <button class="ghost-btn">Export</button>
+            <button class="primary-btn">Launch scan</button>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="stat-card accent-blue">
+            <div class="stat-label">Active flights</div>
+            <div class="stat-value" data-target="18420">0</div>
+            <div class="stat-meta"><span class="up">+7.4%</span> vs. last hour</div>
+          </article>
+
+          <article class="stat-card accent-green">
+            <div class="stat-label">Ship traffic</div>
+            <div class="stat-value" data-target="9640">0</div>
+            <div class="stat-meta"><span class="up">+2.1%</span> throughput</div>
+          </article>
+
+          <article class="stat-card accent-orange">
+            <div class="stat-label">Seismic events</div>
+            <div class="stat-value" data-target="39">0</div>
+            <div class="stat-meta"><span class="down">-1.3%</span> stabilized</div>
+          </article>
+
+          <article class="stat-card accent-purple">
+            <div class="stat-label">CCTV coverage</div>
+            <div class="stat-value" data-target="22840">0</div>
+            <div class="stat-meta"><span class="up">+6.8%</span> active streams</div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="world-panel panel">
+            <div class="panel-header">
+              <div>
+                <div class="mini-label">Live map</div>
+                <h2>Global observation layer</h2>
+              </div>
+              <span class="live-pill"><span class="dot"></span> Live</span>
+            </div>
+
+            <div class="globe-wrap">
+              <div class="globe">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+
+                <div class="pulse pulse-1"></div>
+                <div class="pulse pulse-2"></div>
+                <div class="pulse pulse-3"></div>
+                <div class="pulse pulse-4"></div>
+                <div class="pulse pulse-5"></div>
+                <div class="pulse pulse-6"></div>
+
+                <div class="marker m-1"></div>
+                <div class="marker m-2"></div>
+                <div class="marker m-3"></div>
+                <div class="marker m-4"></div>
+                <div class="marker m-5"></div>
+                <div class="marker m-6"></div>
+              </div>
+            </div>
+
+            <div class="world-legend">
+              <span><i class="legend-dot blue"></i> Air</span>
+              <span><i class="legend-dot green"></i> Sea</span>
+              <span><i class="legend-dot orange"></i> Earth</span>
+            </div>
+          </div>
+
+          <div class="stack-panel">
+            <div class="panel small-panel">
+              <div class="panel-header compact">
+                <div>
+                  <div class="mini-label">Regional focus</div>
+                  <h3>North Atlantic</h3>
+                </div>
+                <span class="neutral-badge">92%</span>
+              </div>
+
+              <div class="sparkline">
+                <span style="--h: 38%"></span>
+                <span style="--h: 56%"></span>
+                <span style="--h: 44%"></span>
+                <span style="--h: 78%"></span>
+                <span style="--h: 68%"></span>
+                <span style="--h: 90%"></span>
+                <span style="--h: 74%"></span>
+                <span style="--h: 82%"></span>
+                <span style="--h: 96%"></span>
+                <span style="--h: 86%"></span>
+              </div>
+
+              <ul class="kpi-list">
+                <li><span>Aircraft</span><strong>1,248</strong></li>
+                <li><span>Wind</span><strong>17 kt</strong></li>
+                <li><span>Risk</span><strong>Low</strong></li>
+              </ul>
+            </div>
+
+            <div class="panel small-panel">
+              <div class="panel-header compact">
+                <div>
+                  <div class="mini-label">Incident watch</div>
+                  <h3>High priority</h3>
+                </div>
+                <span class="warning-badge">3</span>
+              </div>
+
+              <div class="incident-list">
+                <div class="incident-item">
+                  <span class="status orange"></span>
+                  <div>
+                    <strong>Storm front</strong>
+                    <small>Atlantic corridor</small>
+                  </div>
+                </div>
+                <div class="incident-item">
+                  <span class="status red"></span>
+                  <div>
+                    <strong>Fleet anomaly</strong>
+                    <small>Port of Rotterdam</small>
+                  </div>
+                </div>
+                <div class="incident-item">
+                  <span class="status blue"></span>
+                  <div>
+                    <strong>Launch window</strong>
+                    <small>Vandenberg</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bottom-grid">
+          <div class="panel feed-panel">
+            <div class="panel-header compact">
+              <div>
+                <div class="mini-label">Event stream</div>
+                <h3>Global signal feed</h3>
+              </div>
+            </div>
+
+            <div class="feed-list">
+              <div class="feed-item">
+                <span class="feed-time">14:42</span>
+                <div>
+                  <strong>Flight BA281</strong>
+                  <small>Tracking over Western Europe</small>
+                </div>
+              </div>
+              <div class="feed-item">
+                <span class="feed-time">14:37</span>
+                <div>
+                  <strong>Ship MV Aurora</strong>
+                  <small>Traffic density up 11%</small>
+                </div>
+              </div>
+              <div class="feed-item">
+                <span class="feed-time">14:30</span>
+                <div>
+                  <strong>Weather cell</strong>
+                  <small>Typhoon watch in Pacific basin</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel chart-panel">
+            <div class="panel-header compact">
+              <div>
+                <div class="mini-label">Traffic flow</div>
+                <h3>Route density</h3>
+              </div>
+            </div>
+
+            <div class="bar-chart">
+              <span style="--bar: 30%"></span>
+              <span style="--bar: 48%"></span>
+              <span style="--bar: 62%"></span>
+              <span style="--bar: 45%"></span>
+              <span style="--bar: 75%"></span>
+              <span style="--bar: 88%"></span>
+              <span style="--bar: 66%"></span>
+              <span style="--bar: 92%"></span>
+              <span style="--bar: 84%"></span>
+              <span style="--bar: 98%"></span>
+              <span style="--bar: 74%"></span>
+              <span style="--bar: 52%"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
